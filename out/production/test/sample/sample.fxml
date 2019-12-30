@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: white;" stylesheets="@main_styles.css" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox id="main_hbox" prefHeight="680.0" prefWidth="1980.0" style="-fx-background-color: #F7F9FB;">
+         <children>
+            <VBox id="category_vbox" fx:id="search_field" prefHeight="308.0" prefWidth="250.0">
+               <children>
+                  <TextField promptText="wyszukaj...">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button id="category_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Napoje">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
+                  <Button id="category_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Przekąski">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
+                  <Button id="category_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Kanapki">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
+                  <Button id="category_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Desery">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
+                  <Button id="category_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Dodatki">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
+                  <Button id="category_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Inne">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </padding></VBox>
+            <TilePane id="products_in_category" hgap="5.0" prefColumns="2" prefHeight="200.0" prefRows="10" prefTileHeight="50.0" prefTileWidth="220.0" prefWidth="450.0" style="-fx-background-color: #31708E;" vgap="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onMouseReleased="#addToOrder" styleClass="product_button" text="Kawa czarna">
+                     <TilePane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </TilePane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseReleased="#addToOrder" styleClass="product_button" text="Kawa z mlekiem">
+                     <TilePane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </TilePane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseReleased="#addToOrder" styleClass="product_button" text="Espresso">
+                     <TilePane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </TilePane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onScroll="#addToOrder" styleClass="product_button" text="Lattee">
+                     <TilePane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </TilePane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" styleClass="product_button" text="Cappuccino">
+                     <TilePane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </TilePane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onScroll="#addToOrder" styleClass="product_button" text="Herbata zielona">
+                     <TilePane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </TilePane.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></TilePane>
+            <VBox prefHeight="308.0" prefWidth="450.0">
+               <children>
+                  <HBox id="top_options_panel" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #8FC1E3; -fx-background-radius: 20px;">
+                     <children>
+                        <TilePane alignment="TOP_CENTER" maxHeight="200.0" prefColumns="3" prefHeight="100.0" prefRows="2" prefTileWidth="100.0" prefWidth="400.0" vgap="7.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <children>
+                              <Label alignment="TOP_CENTER" prefWidth="100.0" styleClass="big_label" text="16:00">
+                                 <TilePane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </TilePane.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="TOP_CENTER" prefWidth="100.0" styleClass="big_label" text="Kasia">
+                                 <TilePane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </TilePane.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="TOP_CENTER" prefWidth="100.0" styleClass="big_label" text="3">
+                                 <TilePane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </TilePane.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </Label>
+                              <Button id="multiline_text_button" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" stylesheets="@main_styles.css" text="Otwarte zamówienia">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <TilePane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </TilePane.margin>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseReleased="#setDiscount" prefWidth="100.0" text="\%">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <TilePane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </TilePane.margin>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseReleased="#setNote" text="Notatka">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <TilePane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </TilePane.margin>
+                              </Button>
+                           </children>
+                        </TilePane>
+                        <StackPane fx:id="menu_button" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="100.0" maxWidth="100.0"
+                                      minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="76.0"
+                                      onMouseReleased="#showMenuPanel" prefWidth="90.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@graphics/menu_button.png" />
+                                       </image></ImageView>
+                                 </graphic></Button>
+                           </children></StackPane>
+                     </children></HBox>
+                  <VBox id="current_order_list" prefHeight="445.0" prefWidth="450.0">
+                     <children>
+
+                        <ScrollPane prefHeight="434.0" prefWidth="440.0">
+                           <GridPane fx:id="order_grid_pane" hgap="10.0" prefHeight="0.0" prefWidth="412.0" vgap="5.0">
+                              <columnConstraints>
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="10.0" prefWidth="50.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="9.0" prefWidth="240.0" />
+                                 <ColumnConstraints maxWidth="201.0" minWidth="43.0" prefWidth="57.0" />
+                                 <ColumnConstraints maxWidth="208.0" minWidth="47.0" prefWidth="53.0" />
+                              </columnConstraints>
+                              <children>
+                              </children>
+                              <VBox.margin>
+                                 <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                              </VBox.margin>
+                           </GridPane>
+
+                        </ScrollPane>
+                     </children></VBox>
+                  <GridPane id="summary_bottom_panel" fx:id="order_summary" hgap="50.0" vgap="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" onMouseReleased="#setPayment" text="PŁATNOŚĆ" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" styleClass="big_label" text="0.00" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="big_label" text="SUMA:" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="big_label" text="PŁATNOSC:" GridPane.rowIndex="1" />
+                     </children>
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                  </GridPane>
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

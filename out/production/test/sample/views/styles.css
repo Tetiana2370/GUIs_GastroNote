@@ -1,0 +1,88 @@
+.button{
+    -fx-pref-width: 100px;
+    -fx-font-size: 18px;
+    -fx-height: 30px;
+
+    -fx-background-color:
+            linear-gradient(to bottom, rgba(233,238,242,1) 0%, rgba(233,238,242,1) 31%, rgba(155,189,209,1) 86%, rgba(155,189,209,1) 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-text-fill: #242d35;
+
+    -fx-border-color: #31708E;
+    -fx-border-radius: 5, 5, 4;
+    -fx-border-width: 1px;
+
+}
+
+.button:hover {
+    -fx-pref-width: 100px;
+    -fx-font-size: 18px;
+    -fx-height: 30px;
+
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#9a9a9a, #909090),
+            linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-text-fill: #242d35;
+
+    -fx-border-color: #31708E;
+    -fx-border-radius: 5, 5, 4;
+    -fx-border-width: 1px;
+}
+
+.radio-button{
+    -fx-font-size: 18px;
+}
+
+.choice_button{
+    -fx-pref-width: 100px;
+}
+
+.choice_button:hover{
+    -fx-pref-width: 100px;
+}
+
+#menu_panel{
+    -fx-background-color: #5085A5;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #31708E;
+}
+
+.menu_button{
+    -fx-padding: 5px 0px 0px 5px;
+    -fx-pref-height: 80px;
+    -fx-pref-width: 110px;
+    -fx-wrap-text: true;
+    -fx-font-size: 16px;
+}
+.menu_button:hover{
+    -fx-padding: 5px 0px 0px 5px;
+    -fx-pref-height: 80px;
+    -fx-pref-width: 110px;
+    -fx-wrap-text: true;
+    -fx-font-size: 16px;
+}
+
+.menu_button_image {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+}
+
+#total_income_scroll_pane{
+
+}
+
+.report_label {
+    -fx-font-size: 18px;
+    -fx-padding: 10px 10px 10px 10px;
+
+}
+.report_label_total{
+    -fx-font-size: 20px;
+    -fx-padding: 30px 10px 30px 10px;
+    -fx-text-fill: #31708E;
+}

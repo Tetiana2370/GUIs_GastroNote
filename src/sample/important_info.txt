@@ -1,0 +1,13 @@
+used colors:
+
+
+dark #31708E
+
+med #5085A5
+
+lighter #8FC1E3
+
+light #F7F9FB
+
+
+kolory glownych kontenerow sa ustalane w pliku fxml (widac w scene builder, nie wiem dlaczego to nie dziala z poziomu css)

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.ReportController">
+   <children>
+      <VBox layoutY="-3.0" prefHeight="408.0" prefWidth="600.0" style="-fx-background-color: #31708E; -fx-border-color: black; -fx-border-width: 2;">
+         <children>
+            <Pane prefHeight="43.0" prefWidth="595.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onMouseReleased="#close" stylesheets="@styles.css" text="wróć" />
+               </children>
+            </Pane>
+            <ScrollPane id="total_income_scroll_pane" prefHeight="284.0" prefWidth="408.0" style="-fx-background-color: #F7F9FB;" stylesheets="@styles.css">
+               <content>
+                  <GridPane fx:id="gridPane" alignment="TOP_CENTER" hgap="20.0" prefHeight="262.0" prefWidth="378.0" styleClass="report_label" vgap="15.0">
+                    <columnConstraints>
+                      <ColumnConstraints fx:id="report_first_column" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </GridPane>
+               </content>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="30.0" />
+               </VBox.margin>
+            </ScrollPane>
+            <Pane prefHeight="62.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="btn" layoutX="213.0" layoutY="13.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="37.0" prefWidth="163.0" style="-fx-pref-width: 200;" text="Zakończ zmianę" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

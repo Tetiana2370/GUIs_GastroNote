@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.views.AddDiscountController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="400.0">
+         <children>
+            <RadioButton fx:id="rb1" mnemonicParsing="false" onAction="#set" text="15%">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="discount" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rb2" mnemonicParsing="false" onAction="#set" text="25%" toggleGroup="$discount">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></RadioButton>
+            <RadioButton fx:id="rb3" mnemonicParsing="false" onAction="#set" text="50%" toggleGroup="$discount">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></RadioButton>
+            <RadioButton fx:id="rb4" mnemonicParsing="false" onAction="#set" text="100%" toggleGroup="$discount">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></RadioButton>
+            <HBox alignment="TOP_CENTER" prefHeight="74.0" prefWidth="400.0" spacing="150.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#cancel" stylesheets="@styles.css" text="Anuluj">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="button" />
+                        <String fx:value="choice_button" />
+                     </styleClass></Button>
+                  <Button mnemonicParsing="false" onAction="#accept" onMouseReleased="#accept" stylesheets="@styles.css" text="OK">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="button" />
+                        <String fx:value="choice_button" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+               </VBox.margin></HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>
