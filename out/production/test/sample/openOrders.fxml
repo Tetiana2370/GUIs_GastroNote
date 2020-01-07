@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: white;" stylesheets="@main_styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OpenOrdersController">
+   <children>
+      <SplitPane dividerPositions="0.14756446991404013" orientation="VERTICAL" prefHeight="700.0" prefWidth="1200.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="1200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1200.0">
+                     <children>
+                        <Button id="go_back_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseReleased="#goBack" prefHeight="80.0" prefWidth="80.0" text="Button">
+                           <graphic>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@graphics/arrow_left.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Label id="open_orders_label" alignment="CENTER" styleClass="big_label" stylesheets="@main_styles.css" text="OTWARTE ZAMÓWIENIA">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="100.0" right="150.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="open_orders_image">
+                           <image>
+                              <Image url="@graphics/clock.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="60.0" styleClass="big_label" text="14:23">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="open_orders_image">
+                           <image>
+                              <Image url="@graphics/user.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></ImageView>
+                        <Label prefWidth="100.0" styleClass="big_label" text="Kasia K." />
+                        <ImageView fitHeight="55.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@graphics/hourglass.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></ImageView>
+                        <Label prefWidth="50.0" styleClass="big_label" text="3" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="80.0" maxWidth="80.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onMouseReleased="#showMenuPanel" prefHeight="76.0" prefWidth="90.0">
+                           <graphic>
+                              <ImageView fitHeight="80.0" fitWidth=".0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@graphics/menu_button.png" />
+                                 </image></ImageView>
+                           </graphic></Button>
+                     </children></HBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="160.0">
+               <children>
+                  <ScrollPane prefHeight="600.0" prefWidth="1200.0">
+                     <content>
+                     <TilePane fx:id="open_order_box" hgap="50.0" prefHeight="600.0" prefTileHeight="280.0" prefTileWidth="250.0" prefWidth="1200.0" vgap="50.0">
+                     </TilePane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
