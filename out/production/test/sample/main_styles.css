@@ -144,3 +144,55 @@
 
 }
 
+#go_back_button{
+    -fx-pref-width: 80px;
+    -fx-pref-height: 80px;
+}
+
+#open_orders_label{
+    -fx-pref-width: 300px;
+    -fx-pref-height: 60px;
+    -fx-border-color: #31708E;
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-background-radius: 20px;
+    -fx-background-color: #8FC1E3;
+    -fx-text-alignment: center;
+}
+
+.open_orders_image{
+    -fx-fit-to-height: 60px;
+    -fx-fit-to-width: 60px;
+
+}
+
+.open_order_tile{
+    -fx-pref-width: 250px;
+    -fx-pref-height: 280px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #31708E;
+    -fx-background-color: #8FC1E3;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 10px 10px 10px;
+
+}
+
+.open_order_list_label{
+
+    -fx-pref-width: 240px;
+    -fx-pref-height: 150px;
+
+    -fx-border-radius: 10px;
+    -fx-border-color: #31708E;
+    -fx-background-color: #F7F9FB;
+    -fx-background-radius: 10px;
+
+    -fx-wrap-text: true;
+    -fx-font-size: 15px;
+    -fx-alignment: top-left;
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-content-display: top;
+
+
+
+}
